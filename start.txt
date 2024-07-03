@@ -1,0 +1,24 @@
+redis commands:
+set name <entity> :entity stands for value like sahil,mickey
+standdard conventions:
+<entity>:<id> value
+set user:1 sahil //cashing user with partivular id as one
+
+==groups in reddis
+set user:1 <name> --all values regarding user as an key:id store as an group
+set user:2 <name>
+set user:3:<name>
+
+above set is stoerd as an group
+
+//special filters
+
+nx-check weather key is already present with same name it not successfully create new key otherwise return nul as ann false detector
+//inside docker container docker uses 6379 as their ddefault port
+
+//for getting multiple values (mget-multiple get)
+mget user:1 user:2 msg:1 --provide entities like that it might from different groups  
+get(for getting single value)
+
+as we get values simply we can set values in that simple fasshion
+mset bike:1 "deimos" bike:2 "bmw" bike:3 "zx10r" as like that
