@@ -10,7 +10,7 @@ set user:2 <name>
 set user:3:<name>
 
 above set is stoerd as an group
-
+//addition
 //special filters
 
 nx-check weather key is already present with same name it not successfully create new key otherwise return nul as ann false detector
